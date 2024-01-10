@@ -13,7 +13,7 @@ const RetirementIncome = () => {
   const black = "#111";
 
   return (
-    <div className="px-5 lg:px-16 py-2 lg:py-8">
+    <div className="px-5 lg:px-14 py-2 lg:py-6">
       <h3 className="text-blue-600 text-[14px] font-bold">Retirement Income</h3>
       <h2 className="font-semibold text-xl">Starting Year 2056</h2>
 
@@ -40,8 +40,31 @@ const RetirementIncome = () => {
 
       <div className="mt-4">
         <h1 className="text-xl font-semibold ">Contribution Overtime</h1>
+        <div className="flex justify-between flex-col lg:flex-row">
+          <div className="flex items-center space-y-1 gap-2">
+            <span className=" bg-blue-800 h-[8px] w-[13px] rounded-md"></span>
+            <p className="text-gray-500 text-[14px]">
+              Employer :{" "}
+              <span className="font-bold text-gray-800">K 73,500</span>{" "}
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className=" bg-blue-800 h-[8px] w-[13px] rounded-md"></span>
+            <p className="text-gray-500 text-[14px]">
+              Employee :{" "}
+              <span className="font-bold text-gray-800">K 52,200</span>{" "}
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className=" bg-blue-400 h-[8px] w-[13px] rounded-md"></span>
+            <p className="text-gray-500 text-[14px]">
+              Total Interest :{" "}
+              <span className="font-bold text-gray-800">K 244,313</span>{" "}
+            </p>
+          </div>
+        </div>
 
-        <div className="h-[200px] lg:h-[290px] mt-2 ">
+        <div className="h-[220px] lg:h-[290px] mt-2 ">
           <Barchart />
         </div>
       </div>
@@ -53,19 +76,90 @@ const RetirementIncome = () => {
         <p className="text-gray-500 text-[14px]">
           These numbers represent current goal achievement
         </p>
-        <div className="mt-2 flex justify-between flex-col lg:flex-row gap-2">
+        <div className="mt-2  flex justify-between flex-col lg:flex-row gap-2">
           <div>
-            <h3 className="border-b-2 flex items-center gap-1 py-2 border-gray-300">
+            {/* <h3 className="border-b-2 flex items-center gap-1 py-1 border-gray-300">
               Age :<span className="text-gray-600">Under 30</span>{" "}
               <FaCaretDown />
+            </h3> */}
+            <h3 className="border-b-2  flex items-center gap-1 py-1 border-gray-300">
+              Age :
+              <div className="relative z-50 inline-block text-left">
+                <div className="group">
+                  <button
+                    type="button"
+                    className="inline-flex justify-center items-center w-full px-4 text-sm font-medium "
+                  >
+                    Under 30 <FaCaretDown />
+                  </button>
+
+                  <div className="absolute left-0 w-40 borde origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                    <div className="py-1">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Under 25
+                      </a>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Under 20
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </h3>
-            <h3 className="border-b-2 flex items-center gap-1 py-2 border-gray-300">
-              Salary : <span className="text-gray-600">Key 20 - k 30</span>{" "}
-              <FaCaretDown />
+            <h3 className="border-b-2 flex items-center gap-1 py-1 border-gray-300">
+              Salary :
+              <div className="relative z-30 inline-block text-left">
+                <div className="group">
+                  <button
+                    type="button"
+                    className="inline-flex justify-center items-center w-full px-4 text-sm font-medium "
+                  >
+                    Key 20 - k 30 <FaCaretDown />
+                  </button>
+
+                  <div className="absolute left-0 w-40 border origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                    <div className="py-1">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Key 10 - k 20
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </h3>
-            <h3 className="border-b-2 flex items-center gap-1 py-2 border-gray-300">
-              Gender : <span className="text-gray-600">Male</span>{" "}
-              <FaCaretDown />
+
+            <h3 className="border-b-2 flex items-center gap-1 py-1 border-gray-300">
+              Gender :
+              <div className="relative z-20 inline-block text-left">
+                <div className="group">
+                  <button
+                    type="button"
+                    className="inline-flex justify-center items-center w-full px-4 text-sm font-medium "
+                  >
+                   Male <FaCaretDown />
+                  </button>
+
+                  <div className="absolute left-0 w-40 border origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                    <div className="py-1">
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Female
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </h3>
           </div>
 

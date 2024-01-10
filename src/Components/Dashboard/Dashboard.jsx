@@ -22,6 +22,12 @@ const Dashboard = () => {
   return (
     <>
       <div>
+        <div className="absolute bottom-0 right-0">
+          <img
+            src="https://i.ibb.co/bmC91P9/Screenshot-62-removebg-preview.png"
+            alt=""
+          />
+        </div>
         <div className="h-screen flex flex-col lg:flex-row">
           <div className="w-20 shadow-lg border-r-2 bg-gray-50 hidden lg:block ">
             <div className="mb-10">
@@ -52,7 +58,7 @@ const Dashboard = () => {
               </li>
 
               <li>
-                <NavLink>
+                <NavLink to="/">
                   <CiUser className="text-3xl text-gray-600 font-bold" />
                 </NavLink>
               </li>
