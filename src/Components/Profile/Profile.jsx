@@ -17,7 +17,7 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className=" space-y-1 mt-8 ml-2 lg:ml-6">
+        <div className=" space-y-1 mt-8 ml-2  lg:ml-6">
           <div>
             <h3 className="font-semibold text-gray-800 text-[18px]">Today</h3>
             <h1 className="font-bold lg:font-semibold text-3xl text-gray-900">

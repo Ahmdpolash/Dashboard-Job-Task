@@ -73,7 +73,6 @@ const Dashboard = () => {
           <div className="fixed w-full bottom-0 px-8 border shadow-lg bg-gray-50 lg:hidden h-14">
             <ul className="flex gap-4 py-1 justify-between mt-1">
               <li className=" bg-blue-700 px-3 py-2 rounded-md">
-
                 <NavLink>
                   <CiHome className="text-xl text-white font-bold" />
                 </NavLink>
@@ -97,7 +96,7 @@ const Dashboard = () => {
               </li>
               <li>
                 <NavLink>
-                <CiSearch className="text-center mx-auto text-3xl font-semibold text-gray-600" />
+                  <CiSearch className="text-center mx-auto text-3xl font-semibold text-gray-600" />
                 </NavLink>
               </li>
             </ul>

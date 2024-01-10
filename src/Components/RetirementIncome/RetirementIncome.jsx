@@ -2,12 +2,13 @@ import React from "react";
 import { FaCaretDown } from "react-icons/fa";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import Barchart from "../Dashboard/Barchart";
 
 const RetirementIncome = () => {
   const percentage = 66;
   const percentage2 = 95;
   const percentage3 = 59;
-  
+
   const tealColor = "#3cf6f6";
   const black = "#111";
 
@@ -39,7 +40,10 @@ const RetirementIncome = () => {
 
       <div className="mt-4">
         <h1 className="text-xl font-semibold ">Contribution Overtime</h1>
-        <div className="w-full h-[290px] mt-2 bg-red-400"></div>
+
+        <div className="h-[200px] lg:h-[290px] mt-2 ">
+          <Barchart />
+        </div>
       </div>
 
       <div className="mt-2">

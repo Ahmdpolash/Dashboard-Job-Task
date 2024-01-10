@@ -62,7 +62,7 @@ const RetirementStrategy = () => {
               View Help Docs <FaAngleRight />{" "}
             </p>
 
-            <div className=" pt-6 hidden lg:block">
+            <div className=" pt-6  lg:block">
               <div className="border-l-2 border-blue-600 px-4 space-y-1">
                 <h2 className="font-semibold text-gray-700">
                   Are you considering a
